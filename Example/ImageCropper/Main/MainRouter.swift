@@ -44,7 +44,7 @@ extension MainRouterImplementation: MainRouter {
   func openCropper(with figure: ImageCropperConfiguration.ImageCropperFigureType, image: Data, cornerRadius: CGFloat?) {
     guard let img = UIImage(data: image) else { return }
     var config = ImageCropperConfiguration(with: img, and: figure, cornerRadius: cornerRadius)
-    config.showGrid = true
+    config.showGrid = false
     if figure == .customRect {
       config.customRatio = CGSize(width: 6, height: 5)
     }

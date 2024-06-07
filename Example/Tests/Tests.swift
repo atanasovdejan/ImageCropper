@@ -1,5 +1,5 @@
 import XCTest
-import ImageCropper
+//import ImageCropper
 
 class Tests: XCTestCase {
     
